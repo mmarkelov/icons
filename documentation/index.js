@@ -5,7 +5,7 @@ import { HuePicker as Hue } from 'react-color';
 let Icons = {};
 
 icons.forEach(({ size, id }) => {
-  let Icon = require('../../dist/' + size + '/' + id +'.js').default;
+  let Icon = require('../dist/' + size + '/' + id +'.js').default;
   if (!Icons.hasOwnProperty(size)) Icons[size] = {};
   Icons[size][id] = Icon;
 });

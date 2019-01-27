@@ -1,10 +1,10 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const webpack = require('webpack');
-const icons = require('./icons');
+const icons = require('../scripts/utils/icons');
 
 module.exports = {
-  entry: './src/docs/docs.js',
+  entry: './documentation/index.js',
   output: {
     path: path.resolve(process.cwd(), 'docs'),
   },
@@ -31,7 +31,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/docs/docs.html',
+      template: './documentation/docs.html',
       title: 'VK Icons',
       hash: true
     }),

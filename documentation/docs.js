@@ -1,11 +1,11 @@
 const webpack = require('webpack');
-const webpackConfig = require('./utils/webpack.config-docs');
+const webpackConfig = require('./webpack.config-docs');
 const rimraf = require('rimraf');
 const path = require('path');
 
 console.log('creating doc');
 
-const directory = path.join(process.cwd(), 'docs');
+const directory = path.join(process.cwd(), 'documentation/docs');
 
 rimraf.sync(`${directory}/*`);
 
